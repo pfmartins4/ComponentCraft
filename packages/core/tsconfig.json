@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+  "extends": "./node_modules/@rushstack/heft-web-rig/profiles/library/tsconfig-base.json",
+  "compilerOptions": {
+    "outDir": "lib",
+    "rootDirs": ["src/"],
+    "types": ["heft-jest","webpack-env"],
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "lib"]
+}
