@@ -1,1 +1,0 @@
-{"version":3,"file":"start.js","sourceRoot":"","sources":["../../src/start/start.ts"],"names":[],"mappings":";;;AAAA;;GAEG;AACI,IAAM,UAAU,GAAG;IACtB,OAAO,IAAI,CAAA;AACf,CAAC,CAAA;AAFY,QAAA,UAAU,cAEtB","sourcesContent":["/**\n * @alpha\n */\nexport const helloWorld = (): boolean => {\n    return true\n}"]}
