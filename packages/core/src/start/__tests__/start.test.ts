@@ -1,4 +1,4 @@
-import {helloWorld} from "../start";
+import { helloWorld } from "../start";
 
 describe('Example Test',()=>{
     it('correctly runs a test', () => {

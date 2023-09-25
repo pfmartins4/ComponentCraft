@@ -15,7 +15,7 @@
    * SUPPORTED TOKENS: none
    * DEFAULT VALUE: ""
    */
-  // "extends": "./shared/api-extractor-base.json"
+  "extends": "../node_modules/@rushstack/heft-web-rig/profiles/library/config/api-extractor-task.json",
   // "extends": "my-package/include/api-extractor-base.json"
 
   /**
@@ -32,7 +32,7 @@
    * SUPPORTED TOKENS: <lookup>
    * DEFAULT VALUE: "<lookup>"
    */
-  // "projectFolder": "..",
+  "projectFolder": "..",
 
   /**
    * (REQUIRED) Specifies the .d.ts file to be used as the starting point for analysis.  API Extractor
@@ -109,7 +109,7 @@
     /**
      * (REQUIRED) Whether to generate an API report.
      */
-    "enabled": false
+    "enabled": true,
 
     /**
      * The filename for the API report files.  It will be combined with "reportFolder" or "reportTempFolder" to produce
@@ -120,7 +120,7 @@
      * SUPPORTED TOKENS: <packageName>, <unscopedPackageName>
      * DEFAULT VALUE: "<unscopedPackageName>.api.md"
      */
-    // "reportFileName": "<unscopedPackageName>.api.md",
+    "reportFileName": "<unscopedPackageName>.api.md",
 
     /**
      * Specifies the folder where the API report file is written.  The file name portion is determined by
@@ -135,7 +135,7 @@
      * SUPPORTED TOKENS: <projectFolder>, <packageName>, <unscopedPackageName>
      * DEFAULT VALUE: "<projectFolder>/etc/"
      */
-    // "reportFolder": "<projectFolder>/etc/",
+    "reportFolder": "<projectFolder>/etc/",
 
     /**
      * Specifies the folder where the temporary report file is written.  The file name portion is determined by
@@ -150,7 +150,7 @@
      * SUPPORTED TOKENS: <projectFolder>, <packageName>, <unscopedPackageName>
      * DEFAULT VALUE: "<projectFolder>/temp/"
      */
-    // "reportTempFolder": "<projectFolder>/temp/"
+     "reportTempFolder": "<projectFolder>/temp/"
   },
 
   /**
